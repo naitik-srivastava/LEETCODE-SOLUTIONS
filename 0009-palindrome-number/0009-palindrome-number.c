@@ -29,11 +29,11 @@ int isPalindrome(int x) {
         arr[i] = temp % 10;
         temp = temp / 10;
     }
-    // Print digits
-    for(int i = 0; i < digits; i++) {
-        printf("%d\t", arr[i]);
-    }
-    printf("\n");
+    // // Print digits
+    // for(int i = 0; i < digits; i++) {
+    //     printf("%d\t", arr[i]);
+    // }
+    // printf("\n");
     // Palindrome check
     int is_palindrome = 1;
     for(int i = 0; i < digits / 2; i++) {
