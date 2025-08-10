@@ -2,8 +2,8 @@
 bool isValid(char *s) {
     char stack[10000];
     int top = -1;
-
-    for (int i = 0; s[i] != '\0'; i++) {
+int i=0;
+    while(s[i] != '\0') {
         char c = s[i];
 
         if (c == '(' || c == '[' || c == '{') {
@@ -18,6 +18,7 @@ bool isValid(char *s) {
                 return false;
             }
         }
+        i++;
     }
     return top == -1;
 }
