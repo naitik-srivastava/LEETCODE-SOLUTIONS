@@ -15,7 +15,7 @@ int lengthOfLastWord(char *s)
         }
         else if (s[i] == ' ' && k > 0)
         {
-            printf("%d\n", k);
+            // printf("%d\n", k);
 
             return k;
         }
