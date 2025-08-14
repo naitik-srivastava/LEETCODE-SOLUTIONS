@@ -1,6 +1,6 @@
 class Solution {
 public:
-    long long mySqrt(long long x) {
+    int mySqrt(long long x) {
         if(x==1)return 1;
  for(long long i=0;i<x+1;i++)
  {
