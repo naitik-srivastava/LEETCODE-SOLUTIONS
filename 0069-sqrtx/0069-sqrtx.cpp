@@ -1,10 +1,13 @@
 class Solution {
 public:
-    int mySqrt(int x) {
-            // int num = 8;
-    int root = sqrt(x);  // calculates square root
-    // cout << "Square root of " << num << " is " << root << endl;
-    return root;
+    long long mySqrt(long long x) {
+        if(x==1)return 1;
+ for(long long i=0;i<x+1;i++)
+ {
+    if(i*i > x)return i-1;
+ }
 
+
+  return 0;
     }
 };
